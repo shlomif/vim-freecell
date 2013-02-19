@@ -25,7 +25,7 @@ syntax sync minlines=50
 syntax region screenplayTextComment start="<!--" end="-->"
 syntax region screenplayTextDescription start="^ *\[" end="]"
 
-syntax region screenplayTextSaying matchgroup=screenplayTextAddress start=/\(^\s*\n\)\@<=\(\(+\{2,\}\|[^[:+]\+\):\)/ end=/^\s*$/
+syntax region screenplayTextSaying matchgroup=screenplayTextAddress start=/\(^\s*\n\)\@<=\(\(+\{2,\}\|[^[:+]\+\):\)/ end=/^\s*$/ contains=screenplayTextInnerDesc
 
 " syntax region screenplayTextSaying start=/\(^\s*\n\)\@<=\_^\(+\{2,\}\|[^[:+]*\):/ end=/^\s*$/ contains=screenplayTextAddress,screenplayTextInnerDesc
 " syntax region screenplayTextSaying start=/\(^\s*\n\)\@<=\_^\(+\{2,\}\|[^[:+]*\):/ end=/^\s*$/ contains=screenplayTextAddress
@@ -34,7 +34,7 @@ syntax region screenplayTextSaying matchgroup=screenplayTextAddress start=/\(^\s
 " syntax match screenplayTextAddress /[^:]\+:/ contained nextgroup=screenplayTextSayingAfterAddress
 
 " syntax region screenplayTextSayingAfterAddress contained
-" syntax match screenplayTextInnerDesc /\[\_.\{-0,}\]/ contained nextgroup=screenplayTextInnerDesc
+syntax match screenplayTextInnerDesc /\[\_.\{-0,}\]/ contained nextgroup=screenplayTextInnerDesc
 
 
 " For debugging - remove.
