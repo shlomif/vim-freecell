@@ -4,7 +4,7 @@
 " Home: http://search.cpan.org/dist/XML-Grammar-Screenplay/
 "
 " Author: Shlomi Fish
-" Filenames: *.screen.txt
+" Filenames: *.screenplay-text.txt
 " Last Change: Thu Jul  3 00:59:42 IDT 2008
 " Version: 0.0.1
 
