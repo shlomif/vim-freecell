@@ -6,7 +6,7 @@
 require 'rake'
 
 plugin_name = 'screenplay-text'
-files = ["doc/#{plugin_name}.txt", "plugin/#{plugin_name}.vim"]
+files = ["doc/#{plugin_name}.txt", "syntax/#{plugin_name}.vim"]
 
 desc 'Install plugin and documentation'
 task :install do
