@@ -22,7 +22,7 @@ Then you can type <Leader>** to add a search term to the search (mnemonic -
 add a search term to the search and search backwards (mnemonic -
 ## like the vim # command).
 
-<Leader>** 
+<Leader>**
 
     Add the pattern matched by "*" to the search and searches forward in the
     current search pattern.

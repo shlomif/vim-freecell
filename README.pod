@@ -12,9 +12,9 @@ so you can find all the occurences of all of them.
 To use: put this in C<~/.vim/plugin/> , which can be typed by installing the
 Ruby rake package and typing C<rake install>.
 
-Then you can type C<< <Leader>** >> to add a search term to the search 
-(mnemonic - C<*> is the namespace and C<'*'> searches forward for a keyword) 
-and C<< <Leader>## >> to add a search term to the search and search backwards 
+Then you can type C<< <Leader>** >> to add a search term to the search
+(mnemonic - C<*> is the namespace and C<'*'> searches forward for a keyword)
+and C<< <Leader>## >> to add a search term to the search and search backwards
 (mnemonic - ## like the vim # command).
 
 =head1 COPYRIGHT & LICENSE
