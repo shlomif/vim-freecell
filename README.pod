@@ -1,21 +1,10 @@
 =head1 NAME
 
-add-to-word-search.vim - vim plugin to append more words to searches.
+screenplay-text - Vim syntax highlighting for the Screenplay-Text format.
 
 =head1 DESCRIPTION
 
-When searching through code one often needs to add more related
-terms to the search. For example, if I found a call to a function inside
-a different one, or when a type is typedef'ed to something else (in C).
-This module aims to allow you to convenietly add search terms to the search
-so you can find all the occurences of all of them.
-To use: put this in C<~/.vim/plugin/> , which can be typed by installing the
-Ruby rake package and typing C<rake install>.
-
-Then you can type C<< <Leader>** >> to add a search term to the search
-(mnemonic - C<*> is the namespace and C<'*'> searches forward for a keyword)
-and C<< <Leader>## >> to add a search term to the search and search backwards
-(mnemonic - ## like the vim # command).
+See L<http://www.shlomifish.org/open-source/projects/XML-Grammar/Fiction/> .
 
 =head1 COPYRIGHT & LICENSE
 
