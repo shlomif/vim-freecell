@@ -1,10 +1,10 @@
 =head1 NAME
 
-screenplay-text - Vim syntax highlighting for the Screenplay-Text format.
+vim-freecell - Vim syntax highlighting for Freecell Solitaire
 
 =head1 DESCRIPTION
 
-See L<http://www.shlomifish.org/open-source/projects/XML-Grammar/Fiction/> .
+See L<https://fc-solve.shlomifish.org/> .
 
 =head1 COPYRIGHT & LICENSE
 

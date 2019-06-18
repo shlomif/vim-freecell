@@ -5,7 +5,7 @@
 # Added by Josh Nichols, a.k.a. technicalpickles
 require 'rake'
 
-plugin_name = 'screenplay-text'
+plugin_name = 'freecell'
 files = ["doc/#{plugin_name}.txt", "syntax/#{plugin_name}.vim"]
 
 desc 'Install plugin and documentation'

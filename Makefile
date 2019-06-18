@@ -1,7 +1,7 @@
 all:
 
-BASENAME = screenplay-text
-VERSION = 0.2.1
+BASENAME = freecell
+VERSION = 0.0.1
 
 NAME = $(BASENAME)-$(VERSION)
 ZIP_FILE = $(NAME).zip
