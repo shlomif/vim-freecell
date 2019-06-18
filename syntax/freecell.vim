@@ -1,10 +1,10 @@
 " Vim syntax file
-" Language: ScreenplayText - the textual source of ScreenplayXML
-" Maintainer: Shlomi Fish <shlomif@iglu.org.il>
-" Home: http://search.cpan.org/dist/XML-Grammar-Screenplay/
+" Language: CardGames
+" Maintainer: Shlomi Fish <shlomif@cpan.org>
+" Home: https://fc-solve.shlomifish.org/
 "
 " Author: Shlomi Fish
-" Filenames: *.screenplay-text.txt
+" Filenames: *.fc.board
 " Last Change: Thu Jul  3 00:59:42 IDT 2008
 " Version: 0.0.1
 
@@ -22,25 +22,8 @@ syntax sync minlines=50
 
 " syntax match screenplayTextComment /<!--\_.\{-0,}-->/
 " syntax match screenplayTextDescription /^ *\[\_.\{-0,}\]/
-syntax region screenplayTextComment start="<!--" end="-->"
-syntax region screenplayTextDescription start="^ *\[" end="]"
+syntax match cardRed /\<[A2-9TJQK][DH]\>/
+syntax match cardBlack /\<[A2-9TJQK][CS]\>/
 
-syntax region screenplayTextSaying matchgroup=screenplayTextAddress start=/\(^\s*\n\)\@<=\(\(+\{2,\}\|[^[:+]\+\):\)/ end=/^\s*$/ contains=screenplayTextInnerDesc
-
-" syntax region screenplayTextSaying start=/\(^\s*\n\)\@<=\_^\(+\{2,\}\|[^[:+]*\):/ end=/^\s*$/ contains=screenplayTextAddress,screenplayTextInnerDesc
-" syntax region screenplayTextSaying start=/\(^\s*\n\)\@<=\_^\(+\{2,\}\|[^[:+]*\):/ end=/^\s*$/ contains=screenplayTextAddress
-
-" syntax match screenplayTextAddress /\%^\(+\{2,\}\|[^[:+]*\):/ contained nextgroup=screenplayTextInnerDesc
-" syntax match screenplayTextAddress /[^:]\+:/ contained nextgroup=screenplayTextSayingAfterAddress
-
-" syntax region screenplayTextSayingAfterAddress contained
-syntax match screenplayTextInnerDesc /\[\_.\{-0,}\]/ contained nextgroup=screenplayTextInnerDesc
-
-
-" For debugging - remove.
-" hi def link screenplayTextSaying Statement
-
-hi def link screenplayTextComment Comment
-hi def link screenplayTextDescription PreProc
-hi def link screenplayTextInnerDesc PreProc
-hi def screenplayTextAddress      term=bold cterm=bold gui=bold
+hi def cardRed gui=bold guifg=Red
+hi def cardBlack      term=bold cterm=bold gui=bold
